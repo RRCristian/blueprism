@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bpr:release xmlns:bpr="http://www.blueprism.co.uk/product/release">
+    <bpr:name>Suma-DEV</bpr:name>
+    <bpr:release-notes>DEV</bpr:release-notes>
+    <bpr:created>2024-08-14 21:57:02Z</bpr:created>
+    <bpr:package-id>4</bpr:package-id>
+    <bpr:package-name>Suma</bpr:package-name>
+    <bpr:user-created-by>admin</bpr:user-created-by>
+    <bpr:contents count="2">
+        <process id="cef06a0e-5e45-472a-905b-b3cc42afad32" name="Suma" xmlns="http://www.blueprism.co.uk/product/process"><process name="Suma" version="1.0" bpversion="7.3.1.11999" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false"><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view><preconditions /><endpoint narrative="" /><stage stageid="3f39f315-8721-4421-8585-6abfc4f2dd97" name="Start" type="Start"><display x="15" y="-105" /><onsuccess>f356ea0d-7c4d-40a1-88c8-c6e136034f44</onsuccess></stage><stage stageid="4224c5e7-a47f-4960-b9f9-79959f1f7a36" name="End" type="End"><display x="15" y="90" /></stage><stage stageid="cb1fae0d-9695-470b-a56c-eec8c8b98b59" name="Stage1" type="ProcessInfo"><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="98275ba3-2c7c-4bba-b8f2-0e81a98347c7" name="Input 1" type="Data"><loginhibit onsuccess="true" /><display x="-195" y="-15" /><datatype>number</datatype><initialvalue>10</initialvalue><private /><alwaysinit /></stage><stage stageid="bebcd045-7e0b-4cd9-9be5-e388d668de87" name="Input 2" type="Data"><loginhibit onsuccess="true" /><display x="-195" y="30" /><datatype>number</datatype><initialvalue>5</initialvalue><private /><alwaysinit /></stage><stage stageid="f356ea0d-7c4d-40a1-88c8-c6e136034f44" name="Suma" type="Calculation"><loginhibit onsuccess="true" /><display x="15" y="-15" /><onsuccess>4224c5e7-a47f-4960-b9f9-79959f1f7a36</onsuccess><calculation expression="[Input 1]+[Input 2]" stage="Result" /></stage><stage stageid="238b7e9c-fba8-4212-a44d-88c0b7598a26" name="Result" type="Data"><loginhibit onsuccess="true" /><display x="-195" y="75" /><datatype>number</datatype><initialvalue>0</initialvalue><private /><alwaysinit /></stage></process></process>
+        <process-group id="48fc74fc-3b9a-4b13-abe1-bc13ea9662c7" name="Dev" isDefaultGroup="False" xmlns="http://www.blueprism.co.uk/product/process-group">
+            <members>
+                <process id="cef06a0e-5e45-472a-905b-b3cc42afad32" />
+            </members>
+        </process-group>
+    </bpr:contents>
+</bpr:release>
